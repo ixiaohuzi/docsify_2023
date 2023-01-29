@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+</head>
+<body>
+    <div id="app">Loading...</div>
+
+    <script>
+        window.$docsify = {
+            name: '',
+            repo: '',
+            // loadSidebar: true, //开启侧边栏，并展示 _sidebar.md 文件内容
+            // maxLevel: 4,
+            // subMaxLevel: 4,
+            coverpage: true, //开启封面，并展示 _coverpage.md 文件内容
+
+            loadNavbar: true, //开启导航栏，并展示 _navbar.md 文件内容
+            alias: {
+                '/.*/_navbar.md': '/_navbar.md', //防止意外回退
+            },
+
+            //开启搜索功能
+            search: {
+                placeholder: '搜索',
+                noData: '找不到结果!',
+                depth: 3
+            },
+        }
+    </script>
+
+    <!-- Docsify -->
+    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+
+    <!--代码高亮显示-->
+    <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-java.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-sql.js"></script>
+
+    <!--搜索-->
+    <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+
+    <!--代码一键复制-->
+    <script src="//unpkg.com/docsify-copy-code"></script>
+</body>
+</html>
